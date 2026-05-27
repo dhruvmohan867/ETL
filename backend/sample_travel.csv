@@ -1,0 +1,9 @@
+trip_date,origin,destination,distance_km,mode,unit
+2023-10-01,DEL,BOM,1400,Flight,km
+2023-10-03,BOM,BLR,980,Flight,km
+2023-10-05,,BLR,500,Train,km
+2023-10-07,DEL,,1200,Flight,km
+2023-10-10,BLR,HYD,-300,Flight,km
+2023-10-12,DEL,LHR,25000,Flight,km
+2023-10-15,MAA,CCU,1650,Flight,km
+2023-10-18,BOM,GOI,invalid,Flight,km

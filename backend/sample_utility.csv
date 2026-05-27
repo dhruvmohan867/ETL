@@ -1,0 +1,9 @@
+meter_id,reading_date,kwh_consumed,unit,provider
+MTR-001,2023-10-01,1200,kWh,City Power Corp
+MTR-002,2023-10-01,3500,kWh,City Power Corp
+MTR-001,2023-10-15,1350,kWh,City Power Corp
+MTR-003,2023-10-15,-200,kWh,GreenGrid Energy
+,2023-10-20,800,kWh,City Power Corp
+MTR-002,2023-10-20,0,kWh,GreenGrid Energy
+MTR-004,2023-10-25,45000,kWh,City Power Corp
+MTR-001,invalid-date,1100,MWh,GreenGrid Energy

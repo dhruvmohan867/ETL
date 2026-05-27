@@ -1,6 +1,6 @@
 from django.urls import path
-from .views import SAPUploadView
+from .views import FileUploadView
 
 urlpatterns = [
-    path('uploads/sap/', SAPUploadView.as_view(), name='sap-upload'),
+    path('<str:source_type>/', FileUploadView.as_view(), name='file-upload'),
 ]

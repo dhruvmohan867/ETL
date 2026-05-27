@@ -1,16 +1,20 @@
 from django.contrib import admin
 from .models import Company, EmissionRecord
 
+
 @admin.register(Company)
 class CompanyAdmin(admin.ModelAdmin):
     list_display = ('name', 'created_at', 'updated_at')
     search_fields = ('name',)
 
+
 @admin.register(EmissionRecord)
 class EmissionRecordAdmin(admin.ModelAdmin):
     list_display = (
         'source_type', 'category', 'reporting_date',
-        'raw_value', 'raw_unit', 'is_suspicious', 'status'
+        'raw_value', 'raw_unit', 'normalized_value', 'normalized_unit',
+        'is_suspicious', 'status', 'upload',
     )
-    list_filter = ('is_suspicious', 'status', 'source_type', 'category', 'company')
-    search_fields = ('source_type', 'category', 'suspicious_reason')
+    list_filter = ('is_suspicious', 'status', 'source_type', 'company')
+    search_fields = ('category', 'suspicious_reason')
+    readonly_fields = ('created_at', 'updated_at')
