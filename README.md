@@ -1,4 +1,4 @@
-# BreatheESG — Emissions Ingestion Platform
+#  Emissions Ingestion Platform
 
 Django REST + React prototype for ingesting fuel, electricity, and travel data from enterprise sources, normalizing it, flagging suspicious rows, and providing an analyst review workflow before audit.
 
